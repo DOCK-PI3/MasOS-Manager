@@ -8,7 +8,7 @@ SITE_FIXED = {
 }
 
 # Production path to the Recalbox logs file
-RECALBOX_LOGFILE_PATH = "/opt/retropie/configs/all/emulationstation/es_log.txt"
+RECALBOX_LOGFILE_PATH = "/opt/masos/configs/all/emulationstation/es_log.txt"
 
 # Use packaged assets
 ASSETS_PACKAGED = True
