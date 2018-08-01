@@ -1,0 +1,19 @@
+1.0
+- Code forked and modified to run with RetroPie 4.x
+- Removed Monitoring
+- Removed Virtual Gamepad
+- Changed default config file to match retroarch
+- Changed default log file to march Emulation Station
+- Addedd Emulation Station Config file
+- Addedd autostart.sh script
+
+1.1
+- Added python-dev requiremens to compile python-psutil
+- Added pip install psutil in makefile
+- Added Monitoring page
+- Changed on mouse hover color scheme on the menu
+
+1.1.1
+- No need to rename rom folders with dash ("-") in the name
+- Set path to the original es_system.cfg
+- Sortable tables in Bios and Roms view

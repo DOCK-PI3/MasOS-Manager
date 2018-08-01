@@ -1,0 +1,86 @@
+{% load i18n assets %}<!DOCTYPE html>
+<!--[if IE 8]> <html class="{% block html_attr_alt %}{% endblock %}no-js lt-ie9" lang="{{ LANGUAGE_CODE }}"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="{% block html_attr %}{% endblock %}no-js" lang="{{ LANGUAGE_CODE }}"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>{% block head_title %}{{ SITE.name }}{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ STATIC_URL }}images/theme/favicon.ico">
+	<link rel="stylesheet" href="{{ STATIC_URL }}css/recalbox.min.css">
+    {% block header_content %}{% spaceless %}
+        {% block head_metas %}
+            <meta name="robots" content="index,follow,all">
+        {% endblock %}
+        
+        {% block page_more_links %}{% endblock %}
+        {% block page_base_js %}
+            {% javascript_tag "js/modernizr.min.js" %}
+        {% endblock %}
+        
+    {% endspaceless %}{% endblock %}
+	
+	<!-- Sortable Tables -->
+	<link rel="stylesheet" href="{{ STATIC_URL }}css/sortable-theme-minimal.css">
+	<script type="text/javascript" src="{{ STATIC_URL }}js/sortable.min.js"></script>
+	<!-- END Sortable Tablea -->
+</head>
+
+<body{% block body_attr %}{% endblock %}>
+    {% block header_topbar %}{% spaceless %}
+    <div id="header-container"{% block header_topbar_attr %} class="contain-to-grid"{% endblock %}>
+        <nav class="top-bar" data-topbar role="navigation">
+            <ul class="title-area">
+                <li class="name">
+                    <p class="title-1">
+                        <a href="//{{ SITE.domain }}" title="{{ SITE.name }}" class="logo">
+                           <img src="{{ STATIC_URL }}images/theme/logo.png" alt="Retropie Logo" />
+                        </a>
+                    </p>
+                </li>
+                <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+            </ul>
+
+            <div class="top-bar-section">
+                <ul class="right social-badges">
+                    <li><a href="https://github.com/botolo78/RetroPie-Manager" target="_blank"><i class="icon-github-square"></i></a></li>
+                </ul>
+
+                <ul class="left">
+                    <li><a href="{% url 'manager:monitoring' %}"><i class="icon-bar-chart"></i> {% trans "Monitoring" %}</a></li>
+                    <li class="has-dropdown">
+                        <a href="#"><i class="icon-cogs"></i> {% trans "Config" %}</a>
+                        <ul class="dropdown">
+                            <li><a href="{% url 'manager:configes' %}"><i class="icon-cogs"></i> {% trans "Emulation Station" %}</a></li>
+                            <li><a href="{% url 'manager:config' %}"><i class="icon-cogs"></i> {% trans "Retroarch" %}</a></li>
+                            <li><a href="{% url 'manager:configas' %}"><i class="icon-cogs"></i> {% trans "Autostart" %}</a></li>
+                        </ul>
+                    </li>                    
+                    <li><a href="{% url 'manager:bios' %}"><i class="icon-nes-console"></i> {% trans "Bios" %}</a></li>
+                    <li><a href="{% url 'manager:roms-systems' %}"><i class="icon-nes-cartridge"></i> {% trans "Roms" %}</a></li>
+                    <li><a href="{% url 'manager:logs' %}"><i class="icon-book"></i> {% trans "Logs" %}</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    
+    {% endspaceless %}{% endblock %}
+    
+    {% block subheader_container %}{% endblock %}
+
+    {% block content_container %}<div id="body_content"{% block content_container_attrs %}{% endblock %}>
+        {% block base_content %}{% endblock %}
+    </div>{% endblock %}
+
+    {% block footer_container %}<footer>
+    <div class="row larger">
+        <div class="small-12 columns text-right">{% spaceless %}
+            <p><small>{{ SITE.name }} v{{ manager_version }}</small></p>
+        {% endspaceless %}</div>
+    </div>
+    </footer>{% endblock %}
+
+    {% block page_more_js %}
+        {% javascript_tag "js/app.min.js" %}
+    {% endblock %}
+</body>
+</html>
