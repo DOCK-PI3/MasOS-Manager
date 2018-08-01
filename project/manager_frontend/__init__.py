@@ -1,3 +1,0 @@
-"""
-Recalbox manager frontend
-"""
