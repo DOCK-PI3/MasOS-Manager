@@ -117,12 +117,13 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es-es'
 
 LANGUAGES = (
     ('en', gettext('English')),
     ('fr', gettext('French')),
     ('de', gettext('German')),
+    ('es', gettext('Spanish')),
 )
 
 TIME_ZONE = None
@@ -174,25 +175,25 @@ username = getpass.getuser()
 # TODO add logic for when people run as root
 
 # Path to directory that contains bios file
-RECALBOX_BIOS_PATH = os.path.join('/home', username, 'RetroPie/BIOS')
+RECALBOX_BIOS_PATH = os.path.join('/home', username, 'MasOS/BIOS')
 # Path to directory that contains system roms directories
-RECALBOX_ROMS_PATH = os.path.join('/home', username, 'RetroPie/roms')
+RECALBOX_ROMS_PATH = os.path.join('/home', username, 'MasOS/roms')
 # Path to directory that contains system saves
 #RECALBOX_SAVES_PATH = '/home/pi/RetroPie/roms'
 # Path to the Retroarch configuration file
-RECALBOX_CONF_PATH = '/opt/retropie/configs/all/retroarch.cfg'
+RECALBOX_CONF_PATH = '/opt/masos/configs/all/retroarch.cfg'
 # Path to the Retroarch configuration backup file
-RECALBOX_CONF_BACKUP_PATH = '/opt/retropie/configs/all/retroarch.cfg.bak'
+RECALBOX_CONF_BACKUP_PATH = '/opt/masos/configs/all/retroarch.cfg.bak'
 # Path to the ES configuration file
 ES_CONF_PATH = '/etc/emulationstation/es_systems.cfg'
 # Path to the ES configuration backup file
 ES_CONF_BACKUP_PATH = '/etc/emulationstation/es_systems.cfg.bak'
 # Path to autostart.sh
-AS_SCRIPT_PATH = '/opt/retropie/configs/all/autostart.sh'
+AS_SCRIPT_PATH = '/opt/masos/configs/all/autostart.sh'
 # Path autostart.sh backup file
-AS_SCRIPT_BACKUP_PATH = '/opt/retropie/configs/all/autostart.sh.bak'
+AS_SCRIPT_BACKUP_PATH = '/opt/masos/configs/all/autostart.sh.bak'
 # Path to the Recalbox logs file
-RECALBOX_LOGFILE_PATH = "/opt/retropie/configs/all/emulationstation/es_log.txt"
+RECALBOX_LOGFILE_PATH = "/opt/masos/configs/all/emulationstation/es_log.txt"
 # Path to the Recalbox manifest file (actually shipped into manager project)
 RECALBOX_MANIFEST_FILEPATH = os.path.join(PROJECT_DIR, 'MANIFEST.xml')
 
