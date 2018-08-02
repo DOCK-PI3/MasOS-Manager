@@ -1,2 +1,0 @@
-# Dependancies for default env backward compatible with Recalbox version 3.2.x
--r basic.txt
