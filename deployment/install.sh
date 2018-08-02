@@ -2,7 +2,7 @@
 set -e
 
 # Default release targets "master"
-RELEASE="master"
+RELEASE="retropie"
 # Default requirements
 REQUIREMENTS="default.txt"
 
@@ -53,7 +53,7 @@ pip install virtualenv
 echo
 
 echo "* Downloading release $RELEASE"
-wget https://github.com/sveetch/recalbox-manager/archive/$RELEASE.zip
+wget https://github.com/DOCK-PI3/MasOS-Manager/archive/$RELEASE.zip
 unzip $RELEASE.zip
 echo
 
