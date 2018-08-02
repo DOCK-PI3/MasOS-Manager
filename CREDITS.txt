@@ -1,0 +1,3 @@
+- Recalbox Manager (https://github.com/recalbox/recalbox-manager)
+
+- Sortable js script by Adam Schwartz (http://github.hubspot.com/sortable/)

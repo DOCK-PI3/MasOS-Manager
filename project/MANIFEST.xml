@@ -1,0 +1,539 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<systems>
+   <system key="3do" name="Panasonic 3do">
+      <extensions>
+         <extension>iso</extension>
+      </extensions>
+      <bios>
+        <file md5="51f2f43ae2f3508a14d9f56597e2d3ce">panafz10.bin</file>
+      </bios>
+   </system>
+   <system key="amiga" name="Amiga">
+      <extensions>
+         <extension>adf</extension>
+         <extension>uae</extension>
+         <extension>hdf</extension>
+         <extension>lzx</extension>
+      </extensions>
+      <bios>
+        <file md5="192d6d950d0ed3df8040b788502831c2">kick13.rom</file>
+        <file md5="dc10d7bdd1b6f450773dfb558477c230">kick20.rom</file>
+        <file md5="e40a5dfb3d017ba8779faba30cbd1c8e">kick31.rom</file>
+      </bios>
+   </system>
+   <system key="amstradcpc" name="Amstrad CPC">
+      <extensions>
+         <extension>dsk</extension>
+         <extension>cpc</extension>
+      </extensions>
+   </system>
+   <system key="arcade" name="Arcade">
+      <extensions>
+         <extension>zip</extension>
+      </extensions>
+   </system>
+   <system key="atari2600" name="Atari 2600">
+      <extensions>
+         <extension>a26</extension>
+         <extension>bin</extension>
+         <extension>gz</extension>
+         <extension>rom</extension>
+         <extension>zip</extension>
+      </extensions>
+   </system>
+   <system key="atari5200" name="Atari 5200">
+      <extensions>
+         <extension>a52</extension>
+         <extension>bin</extension>
+      </extensions>
+      <bios>
+         <file md5="0bac0c6a50104045d902df4503a4c30b">ATARIBAS.ROM</file>
+         <file md5="eb1f32f5d9f382db1bbfb8d7f9cb343a">ATARIOSA.ROM</file>
+         <file md5="a3e8d617c95d08031fe1b20d541434b2">ATARIOSB.ROM</file>
+         <file md5="06daac977823773a3eea3422fd26a703">ATARIXL.ROM</file>
+         <file md5="281f20ea4320404ec820fb7ec0693b38">5200.rom</file>
+      </bios>
+   </system>
+   <system key="atari7800" name="Atari 7800">
+      <extensions>
+         <extension>a78</extension>
+         <extension>bin</extension>
+         <extension>zip</extension>
+      </extensions>
+      <bios>
+         <file md5="0763f1ffb006ddbe32e52d497ee848ae">7800 BIOS (U).rom</file>
+      </bios>
+   </system>
+   <system key="atari800" name="Atari 8-bit Series">
+      <extensions>
+         <extension>atr</extension>
+         <extension>bas</extension>
+         <extension>bin</extension>
+         <extension>com</extension>
+         <extension>dcm</extension>
+         <extension>gz</extension>
+         <extension>xex</extension>
+         <extension>xfd</extension>
+      </extensions>
+      <bios>
+         <file md5="0bac0c6a50104045d902df4503a4c30b">ATARIBAS.ROM</file>
+         <file md5="eb1f32f5d9f382db1bbfb8d7f9cb343a">ATARIOSA.ROM</file>
+         <file md5="a3e8d617c95d08031fe1b20d541434b2">ATARIOSB.ROM</file>
+         <file md5="06daac977823773a3eea3422fd26a703">ATARIXL.ROM</file>
+         <file md5="281f20ea4320404ec820fb7ec0693b38">5200.rom</file>
+      </bios>
+   </system>
+   <system key="atarijaguar" name="Atari Jaguar">
+      <extensions>
+         <extension>j64</extension>
+         <extension>jag</extension>
+      </extensions>
+   </system>
+   <system key="atarilynx" name="Lynx">
+      <extensions>
+         <extension>lnx</extension>
+         <extension>zip</extension>
+      </extensions>
+      <bios>
+         <file md5="fcd403db69f54290b51035d82f835e7b">lynxboot.img</file>
+      </bios>
+   </system>
+   <system key="atarist" name="Atari ST">
+      <extensions>
+         <extension>ctr</extension>
+         <extension>img</extension>
+         <extension>ipf</extension>
+         <extension>raw</extension>
+         <extension>rom</extension>
+         <extension>st</extension>
+         <extension>stx</extension>
+      </extensions>
+   </system>
+   <system key="coco" name="Tandy Color Computer">
+      <extensions>
+         <extension>asc</extension>
+         <extension>bas</extension>
+         <extension>cas</extension>
+         <extension>ccc</extension>
+         <extension>dmk</extension>
+         <extension>dsk</extension>
+         <extension>jvc</extension>
+         <extension>os9</extension>
+         <extension>rom</extension>
+         <extension>sna</extension>
+         <extension>vdk</extension>
+         <extension>wav</extension>
+      </extensions>
+      <bios>
+         <file md5="c2fc43556eb6b7b25bdf5955bd9df825">bas13.rom</file>
+      </bios>
+   </system>
+   <system key="coleco" name="Colecovision">
+      <extensions>
+         <extension>bin</extension>
+         <extension>col</extension>
+         <extension>rom</extension>
+         <extension>zip</extension>
+      </extensions>
+      <bios>
+         <file md5="2c66f5911e5b42b8ebe113403548eee7">coleco.rom</file>
+      </bios>
+   </system>
+   <system key="c64" name="Commodore 64">
+      <extensions>
+         <extension>crt</extension>
+         <extension>d64</extension>
+         <extension>g64</extension>
+         <extension>t64</extension>
+         <extension>tap</extension>
+         <extension>x64</extension>
+      </extensions>
+   </system>
+   <system key="daphne" name="Daphne">
+      <extensions>
+         <extension>.daphne</extension>
+      </extensions>
+   </system>
+   <system key="dragon32" name="Dragon 32">
+      <extensions>
+         <extension>asc</extension>
+         <extension>bas</extension>
+         <extension>cas</extension>
+         <extension>ccc</extension>
+         <extension>dmk</extension>
+         <extension>dsk</extension>
+         <extension>jvc</extension>
+         <extension>os9</extension>
+         <extension>rom</extension>
+         <extension>sna</extension>
+         <extension>vdk</extension>
+         <extension>wav</extension>
+      </extensions>
+      <bios>
+         <file md5="3420b96031078a4ef408cad7bf21a33f">d32.rom</file>
+      </bios>
+   </system>
+   <system key="dreamcast" name="Dreamcast">
+      <extensions>
+         <extension>cdi</extension>
+         <extension>gdi</extension>
+      </extensions>
+      <bios>
+         <file md5="e10c53c2f8b90bab96ead2d368858623">dc_boot.bin</file>
+         <file md5="74e3f69c2bb92bc1fc5d9a53dcf6ffe2">dc_flash.bin</file>
+      </bios>
+   </system>
+   <system key="fba" name="FBA">
+      <extensions>
+         <extension>fba</extension>
+         <extension>zip</extension>
+      </extensions>
+   </system>
+   <system key="fds" name="Nintendo Family Computer Disk System">
+      <extensions>
+         <extension>fds</extension>
+         <extension>zip</extension>
+      </extensions>
+      <bios>
+         <file md5="ca30b50f880eb660a320674ed365ef7a">disksys.rom</file>
+      </bios>
+   </system>
+   <system key="gamegear" name="Game Gear">
+      <extensions>
+         <extension>gg</extension>
+         <extension>zip</extension>
+      </extensions>
+   </system>
+   <system key="gb" name="Game Boy">
+      <extensions>
+         <extension>gb</extension>
+         <extension>zip</extension>
+      </extensions>
+   </system>
+   <system key="gba" name="Game Boy Advance">
+      <extensions>
+         <extension>gba</extension>
+         <extension>zip</extension>
+      </extensions>
+      <bios>
+         <file md5="a860e8c0b6d573d191e4ec7db1b1e4f6">gba_bios.bin</file>
+      </bios>
+   </system>
+   <system key="gbc" name="Game Boy Color">
+      <extensions>
+         <extension>gb</extension>
+         <extension>gbc</extension>
+         <extension>zip</extension>
+      </extensions>
+   </system>
+   <system key="genesis" name="Genesis">
+      <extensions>
+         <extension>gen</extension>
+         <extension>md</extension>
+         <extension>smd</extension>
+         <extension>bin</extension>
+         <extension>zip</extension>
+      </extensions>
+   </system>   
+   <system key="gw" name="Game &amp; Watch">
+      <extensions>
+         <extension>mgw</extension>
+         <extension>zip</extension>
+      </extensions>
+      <download_links>
+         <link>http://bot.libretro.com/assets/cores/gw/</link>
+      </download_links>
+   </system>
+   <system key="intellivision" name="Intellivision">
+      <extensions>
+         <extension>bin</extension>
+         <extension>int</extension>
+      </extensions>
+      <bios>
+         <file md5="62e761035cb657903761800f4437b8af">exec.bin</file>
+         <file md5="0cd5946c6473e42e8e4c2137785e427f">grom.bin</file>
+      </bios>
+   </system>
+   <system key="macintosh" name="Macintosh">
+      <extensions>
+         <extension>img</extension>
+         <extension>rom</extension>
+      </extensions>
+   </system> 
+   <system key="mame-advmame" name="MAME AdvanceMAME">
+      <extensions>
+         <extension>zip</extension>
+      </extensions>
+   </system>
+   <system key="mame-libretro" name="MAME Libretro">
+      <extensions>
+         <extension>zip</extension>
+      </extensions>
+   </system>
+   <system key="mame-mame4all" name="MAME MAME4all">
+      <extensions>
+         <extension>zip</extension>
+      </extensions>
+   </system>
+   <system key="mastersystem" name="Sega Master System">
+      <extensions>
+         <extension>sms</extension>
+         <extension>zip</extension>
+      </extensions>
+   </system>
+   <system key="megadrive" name="Megadrive">
+      <extensions>
+         <extension>gen</extension>
+         <extension>md</extension>
+         <extension>smd</extension>
+         <extension>bin</extension>
+         <extension>zip</extension>
+      </extensions>
+   </system>
+   <system key="msx" name="MSX">
+      <extensions>
+         <extension>mx1</extension>
+         <extension>mx2</extension>
+         <extension>zip</extension>
+      </extensions>
+      <bios>
+         <file md5="d6dedca1112ddfda94cc9b2e426b818b">CARTS.SHA</file>
+         <file md5="85b38e4128bbc300e675f55b278683a8">CYRILLIC.FNT</file>
+         <file md5="80dcd1ad1a4cf65d64b7ba10504e8190">DISK.ROM</file>
+         <file md5="af8537262df8df267072f359399a7635">FMPAC16.ROM</file>
+         <file md5="6f69cc8b5ed761b03afd78000dfb0e19">FMPAC.ROM</file>
+         <file md5="c83e50e9f33b8dd893c414691822740d">ITALIC.FNT</file>
+         <file md5="febe8782b466d7c3b16de6d104826b34">KANJI.ROM</file>
+         <file md5="2183c2aff17cf4297bdb496de78c2e8a">MSX2EXT.ROM</file>
+         <file md5="7c8243c71d8f143b2531f01afa6a05dc">MSX2PEXT.ROM</file>
+         <file md5="6d8c0ca64e726c82a4b726e9b01cdf1e">MSX2P.ROM</file>
+         <file md5="ec3a01c91f24fbddcbcab0ad301bc9ef">MSX2.ROM</file>
+         <file md5="6418d091cd6907bbcf940324339e43bb">MSXDOS2.ROM</file>
+         <file md5="aa95aea2563cd5ec0a0919b44cc17d47">MSX.ROM</file>
+         <file md5="403cdea1cbd2bb24fae506941f8f655e">PAINTER.ROM</file>
+         <file md5="279efd1eae0d358eecd4edc7d9adedf3">RS232.ROM</file>
+      </bios>
+   </system>
+   <system key="n64" name="Nintendo64">
+      <extensions>
+         <extension>n64</extension>
+         <extension>v64</extension>
+         <extension>z64</extension>
+      </extensions>
+   </system>
+   <system key="nds" name="Nintendo DS">
+      <extensions>
+         <extension>bin</extension>
+         <extension>nds</extension>
+      </extensions>
+   </system>
+   <system key="neogeo" name="NeoGeo">
+      <extensions>
+         <extension>zip</extension>
+      </extensions>
+   </system>
+   <system key="nes" name="Nintendo Entertainment System">
+      <extensions>
+         <extension>nes</extension>
+         <extension>zip</extension>
+      </extensions>
+   </system>
+   <system key="ngp" name="NeoGeo Pocket">
+      <extensions>
+         <extension>ngp</extension>
+         <extension>zip</extension>
+      </extensions>
+   </system>
+   <system key="ngpc" name="NeoGeo Pocket Color">
+      <extensions>
+         <extension>ngc</extension>
+         <extension>zip</extension>
+      </extensions>
+   </system>
+   <system key="oric" name="Oric 1 / Atmos">
+      <extensions>
+         <extension>dsk</extension>
+         <extension>tap</extension>
+      </extensions>
+   </system>
+  <system key="pc" name="PC">
+      <extensions>
+         <extension>bat</extension>
+         <extension>com</extension>
+         <extension>exe</extension>
+         <extension>sh</extension>
+      </extensions>
+   </system>
+   <system key="pcengine" name="PC Engine / TurboGrafx 16">
+      <extensions>
+         <extension>pce</extension>
+         <extension>cue</extension>
+         <extension>ccd</extension>
+         <extension>sgx</extension>
+         <extension>zip</extension>
+      </extensions>
+      <bios>
+         <file md5="ff1a674273fe3540ccef576376407d1d">syscard3.pce</file>
+      </bios>
+   </system>
+   <system key="psp" name="PSP">
+      <extensions>
+         <extension>cso</extension>
+         <extension>iso</extension>
+         <extension>pbp</extension>
+      </extensions>
+   </system>
+   <system key="psx" name="PSX">
+      <extensions>
+         <extension>img</extension>
+         <extension>bin</extension>
+         <extension>iso</extension>
+      </extensions>
+      <bios>
+         <file md5="924e392ed05558ffdb115408c263dccf">SCPH1001.BIN</file>
+         <file md5="8dd7d5296a650fac7319bce665a6a53c">scph5500.bin</file>
+         <file md5="924e392ed05558ffdb115408c263dccf">scph5501.bin</file>
+         <file md5="e56ec1b027e2fe8a49217d9678f7f6bb">scph5502.bin</file>
+      </bios>
+   </system>
+   <system key="samcoupe" name="SAM Coupé">
+      <extensions>
+         <extension>dsk</extension>
+         <extension>mgt</extension>
+         <extension>sad</extension>
+         <extension>sbt</extension>
+      </extensions>
+   </system>
+   <system key="saturn" name="Sega Saturn">
+      <extensions>
+         <extension>bin</extension>
+         <extension>iso</extension>
+         <extension>mdf</extension>
+      </extensions>
+      <bios>
+         <file md5="af5828fdff51384f99b3c4926be27762">saturn_bios.bin</file>
+      </bios>
+   </system>
+   <system key="scummvm" name="ScummVM">
+      <extensions>
+         <extension>svn</extension>
+      </extensions>
+   </system>
+   <system key="sega32x" name="Sega 32x">
+      <extensions>
+         <extension>32x</extension>
+         <extension>smd</extension>
+         <extension>bin</extension>
+         <extension>zip</extension>
+      </extensions>
+      <bios>
+         <file md5="6a5433f6a132a2b683635819a6dcf085">32X_G_BIOS.BIN</file>
+         <file md5="f88354ec482be09aeccd76a97bb75868">32X_M_BIOS.BIN</file>
+         <file md5="7f041b6a55cd7423a6c08a219335269e">32X_S_BIOS.BIN</file>
+      </bios>
+   </system>
+   <system key="segacd" name="Sega CD">
+      <extensions>
+         <extension>cue</extension>
+      </extensions>
+      <bios>
+         <file md5="854b9150240a198070150e4566ae1290">us_scd2_9306.bin</file>
+         <file md5="d8b8b720dea6c6ba25c309ed633930f4">eu_mcd2_9306.bin</file>
+         <file md5="bdeb4c47da613946d422d97d98b21cda">jp_mcd1_9112.bin</file>
+         <file md5="2efd74e3232ff260e371b99f84024f7f">bios_CD_U.bin</file>
+         <file md5="e66fa1dc5820d254611fdcdba0662372">bios_CD_E.bin</file>
+         <file md5="278a9397d192149e84e820ac621a8edd">bios_CD_J.bin</file>
+      </bios>
+   </system>
+   <system key="sg-1000" name="SG-1000">
+      <extensions>
+         <extension>sg</extension>
+         <extension>zip</extension>
+      </extensions>
+   </system>
+   <system key="snes" name="Super Nintendo Entertainment System">
+      <extensions>
+         <extension>sfc</extension>
+         <extension>smc</extension>
+         <extension>zip</extension>
+      </extensions>
+   </system>
+   <system key="ti99" name="TI-99/4A">
+      <extensions>
+         <extension>ctg</extension>
+      </extensions>
+      <bios>
+         <file md5="412ecbf991edcb68edd0e76c2caa4a59">TI-994A.ctg</file>
+      </bios>
+   </system>
+   <system key="trs-80" name="TRS-80">
+      <extensions>
+         <extension>dsk</extension>
+      </extensions>
+      <bios>
+         <file md5="ca74822ebc2803c6635a55116ecd9539">level2.rom</file>
+      </bios>
+   </system>
+   <system key="vectrex" name="Vectrex">
+      <extensions>
+         <extension>vec</extension>
+         <extension>zip</extension>
+      </extensions>
+   </system>
+   <system key="videopac" name="Videopac / Odyssey 2">
+      <extensions>
+         <extension>bin</extension>
+      </extensions>
+      <bios>
+         <file md5="562d5ebf9e030a40d6fabfc2f33139fd">o2rom.bin</file>
+      </bios>
+   </system>
+   <system key="virtualboy" name="Nintendo Virtual Boy">
+      <extensions>
+         <extension>vb</extension>
+         <extension>zip</extension>
+      </extensions>
+   </system>
+   <system key="wonderswan" name="Wonder Swan">
+      <extensions>
+         <extension>ws</extension>
+         <extension>zip</extension>
+      </extensions>
+   </system>
+   <system key="wonderswancolor" name="Wonder Swan Color">
+      <extensions>
+         <extension>wsc</extension>
+         <extension>zip</extension>
+      </extensions>
+   </system>
+   <system key="zmachine" name="Zmachine (Infocom)">
+      <extensions>
+         <extension>dat</extension>
+         <extension>z1</extension>
+         <extension>z2</extension>
+         <extension>z3</extension>
+         <extension>z4</extension>
+         <extension>z5</extension>
+         <extension>z6</extension>
+         <extension>z7</extension>
+         <extension>z8</extension>
+         <extension>zip</extension>
+      </extensions>
+   </system>
+   <system key="zxspectrum" name="ZX Spectrum">
+      <extensions>
+         <extension>sna</extension>
+         <extension>szx</extension>
+         <extension>z80</extension>
+         <extension>tap</extension>
+         <extension>tzx</extension>
+         <extension>gz</extension>
+         <extension>udi</extension>
+         <extension>mgt</extension>
+         <extension>img</extension>
+         <extension>trd</extension>
+         <extension>scl</extension>
+         <extension>dsk</extension>
+      </extensions>
+   </system>   
+</systems>

@@ -1,0 +1,55 @@
+{% extends "manager_frontend/base.html" %}
+{% load i18n %}
+
+{% block manager_content %}
+{% if backup_content %}<ul class="tabs" data-tab>
+  <li class="tab-title active"><a href="#panel-current">{% trans "Current" %}</a></li>
+  <li class="tab-title"><a href="#panel-backup">{% trans "Backup" %}</a></li>
+</ul>{% endif %}
+
+<div class="tabs-content">
+    <div class="content active" id="panel-current">
+        <ul class="inline-list">
+            <li><span class="label info radius">{% trans "Path" %}: {{ config_filepath }}</span></li>
+        </ul>
+            
+        <form action="." method="post">
+            {% csrf_token %}
+            <div class="row">
+                <div class="large-12 columns">
+                    {% if messages %}{% for message in messages %}
+                    <div class="alert-box{% if message.tags %} {{ message.tags }}{% endif %}" data-alert>
+                        {{ message }}
+                        <a href="#" class="close">&times;</a>
+                    </div>
+                    {% endfor %}{% endif %}
+                    
+                    {% if form.content.errors %}
+                    <div>
+                        {% for error in form.content.errors %}
+                        <small class="error">{{ error }}</small>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                    
+                    {{ form.content }}
+                    
+                    <p class="panel">
+                        <label>{{ form.backup }} {% trans "Backup previous version before saving" %}</label>
+                    </p>
+                    <p class="text-center">
+                        <input type="submit" value="{% trans "Save" %}" class="button">
+                    </p>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+    <div class="content" id="panel-backup">
+        <ul class="inline-list">
+            <li><span class="label info radius">{% trans "Path" %}: {{ backup_filepath }}</span></li>
+        </ul>
+        <textarea name="backup" rows="30">{{ backup_content }}</textarea>
+    </div>
+</div>
+{% endblock %}

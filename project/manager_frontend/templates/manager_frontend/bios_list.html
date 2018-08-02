@@ -1,0 +1,115 @@
+{% extends "manager_frontend/base.html" %}
+{% load i18n manager_tags assets %}
+
+{% block page_more_js %}{{ block.super }}
+    {% javascript_tag "js/dropzone.min.js" %}
+    <script type="text/javascript">
+    //<![CDATA[
+        Dropzone.options['uploadDropzone'] = {
+            'init': function() {
+                // Naive usage of queuecomplete event
+                // Should be aware of upload errors and so don't automatically 
+                // reload the page (displaying a warning?)
+                this.on("queuecomplete", function() {
+                    //window.location.href = '{% url 'manager:bios' %}';
+                });
+            },
+            'url': "{% url 'manager:bios-upload' %}",
+            'paramName': "{{ upload_form.bios.name }}"
+        };
+    //]]>
+    </script>
+{% endblock %}
+
+
+{% block manager_content %}
+<ul class="inline-list">
+    <li><span class="label info radius">{% trans "Path" %}: {{ bios_path }}</span></li>
+    <li><span class="label info radius">{% trans "Total" %}: {{ existing_bios_length }}</span></li>
+</ul>
+
+<form action="{% url 'manager:bios' %}" method="post" id="upload-dropzone" class="dropzone" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="hidden" name="upload_submit" value="1">
+    <div class="fallback">
+        <div class="row">
+            <div class="large-12 columns">
+                <div class="row collapse">
+                    {% if messages %}{% for message in messages %}
+                    <div class="alert-box{% if message.tags %} {{ message.tags }}{% endif %}" data-alert>
+                        {{ message }}
+                        <a href="#" class="close">&times;</a>
+                    </div>
+                    {% endfor %}{% endif %}
+                    
+                    {% if upload_form.bios.errors %}
+                    <div class="small-12 columns">
+                        {% for error in upload_form.bios.errors %}
+                        <small class="error">{{ error }}</small>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                    
+                    <div class="small-3 columns">
+                        <span class="prefix">{% trans "Upload a bios" %}</span>
+                    </div>
+                    <div class="small-7 columns">
+                        {{ upload_form.bios }}
+                    </div>
+                    <div class="small-2 columns">
+                        <input type="submit" name="upload_submit" value="Send" class="button postfix">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<form action="." method="post">
+    {% csrf_token %}
+    {% if delete_form.roms.errors %}
+    <div class="row">
+        <div class="small-12 columns">
+            {% for error in delete_form.roms.errors %}
+            <small class="error">{{ error }}</small>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+    
+    <div class="row">
+        <div class="small-12 medium-9 columns">
+            <p class="tiny-button-v-align">{% blocktrans %}This is the full list of supported Bios, existing bios you have uploaded will be decorated and followed with a checkbox{% endblocktrans %}</p>
+        </div>
+        <div class="small-12 medium-3 columns text-right">
+            <input type="submit" name="delete_submit" value="{% trans "Delete selected files" %}" class="button tiny radius info">
+        </div>
+    </div>
+    
+    <div class="text-right">
+        <table class="expand sortable-theme-minimal" data-sortable>
+            <thead>
+                <tr>
+                    <th class="text-right"><small>#</small></th>
+                    <th>{% trans "System" %}</th>
+                    <th>{% trans "Filename" %}</th>
+                    <th>{% trans "MD5 checksum" %}</th>
+                    <th class="text-center">{% trans "Check" %}</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for checkbox in delete_form.bios_files %}{% with manifest_entry=bios_manifest|get_item:checkbox.choice_value %}
+                <tr class="{% if manifest_entry.2 %}active{% else %}disabled{% endif %}">
+                    <td class="text-right"><small>{{ forloop.counter }}</small></td>
+                    <td>{{ manifest_entry.1 }}</td>
+                    <td>{{ checkbox.choice_label }}</td> {% comment %}filename{% endcomment %}
+                    <td>{{ checkbox.choice_value }}</td> {% comment %}-> md5{% endcomment %}
+                    <td class="text-center">{% if manifest_entry.2 %}{{ checkbox.tag }}{% else %}&nbsp;{% endif %}</td>
+                </tr>
+            {% endwith %}{% endfor %}
+            </tbody>
+        </table>
+        <input type="submit" name="delete_submit" value="{% trans "Delete selected files" %}" class="button tiny radius info">
+    </div>
+</form>
+{% endblock %}
