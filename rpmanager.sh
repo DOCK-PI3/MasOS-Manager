@@ -82,7 +82,7 @@ function set_user() {
         return 1
     fi
 
-    if [[ ! -d "/home/$1/RetroPie/" ]]; then
+    if [[ ! -d "/home/$1/MasOS/" ]]; then
         echo "Error: the user '$1' is not a RetroPie user." >&2
         return 1
     fi
