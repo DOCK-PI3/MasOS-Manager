@@ -25,7 +25,7 @@ SITE_ID = 1
 # If not empty, use this instead of Site framework to know the name and use 
 # a trick to find the host ip
 SITE_FIXED = {
-    'name': "Retropie Manager",
+    'name': "MasOS Manager",
     'ip': None, # If None find the ip automatically, else use a string to define another hostname
     'port': '8001', # If None no port is appended to hostname, so the server have to be reachable from port 80
 }
@@ -39,7 +39,7 @@ SECRET_KEY = '(_0!&^^xekahfp=s5(9+^wlq6gvn6z90%i*p+wn^4ir+mvl4lx'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
