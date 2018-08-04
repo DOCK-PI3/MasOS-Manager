@@ -7,13 +7,13 @@
 
     <div class="row cpu">
         <div class="small-12 columns">
-            <p class="title-3">{% trans "CPU" %}</p>
+            <p class="title-3">{% trans "Procesador" %}</p>
         </div>
         {% for core_percent in cpu_infos.usage %}{% with core_int=core_percent|floatformat:"0" %}
         <div class="small-6 columns{% if forloop.last %} end{% endif %} core-item">
             <div class="row">
                 <div class="small-12 medium-4 columns core-number text-right">
-                    <p>{% blocktrans with number=forloop.counter %}Core&nbsp;{{ number }}{% endblocktrans %}</p>
+                    <p>{% blocktrans with number=forloop.counter %}Núcleo&nbsp;{{ number }}{% endblocktrans %}</p>
                 </div>
                 <div class="small-12 medium-8 columns core-usage-progress">
                     <div class="progress success radius">
@@ -33,7 +33,7 @@
             <div class="row memory">
                 {% with memory_usage_int=memory_infos.usage_percent|floatformat:"0" %}
                 <div class="small-12 columns">
-                    <p class="title-3">{% trans "Memory" %}</p>
+                    <p class="title-3">{% trans "Memoria RAM" %}</p>
                 </div>
                 <div class="small-12 medium-3 columns medium-text-right free">
                     {% blocktrans with size=memory_infos.free_unified|filesizeformat %}Free: {{ size }}{% endblocktrans %}
@@ -51,7 +51,7 @@
             </div>
         </div>
         <div class="small-12 columns medium-3 thermal-cpu-infos">
-            <p class="title-3">{% trans "CPU Temperature" %}</p>
+            <p class="title-3">{% trans "Temperatura CPU" %}</p>
             <p class="text-center"><span class="biggest">{{ cpu_thermal_infos.current }}°c</span></p>
             <p class="text-center">{% trans "Max" %}: {{ cpu_thermal_infos.max }}°c</p>
         </div>
@@ -61,16 +61,16 @@
     
     <div class="row filesystem">
         <div class="small-12 columns">
-            <p class="title-3">{% trans "File system" %}</p>
+            <p class="title-3">{% trans "Sistema de archivos" %}</p>
             <table class="expand">
                 <thead>
                     <tr>
-                        <th class="device">{% trans "Device" %}</th>
-                        <th class="mountpoint">{% trans "Mount" %}</th>
-                        <th class="type">{% trans "Type" %}</th>
-                        <th class="usage">{% trans "Usage" %}</th>
-                        <th class="used">{% trans "Used" %}</th>
-                        <th class="free">{% trans "Free" %}</th>
+                        <th class="device">{% trans "Dispositivo" %}</th>
+                        <th class="mountpoint">{% trans "Partición" %}</th>
+                        <th class="type">{% trans "Tipo" %}</th>
+                        <th class="usage">{% trans "Uso" %}</th>
+                        <th class="used">{% trans "Usado" %}</th>
+                        <th class="free">{% trans "Libre" %}</th>
                         <th class="total">{% trans "Total" %}</th>
                     </tr>
                 </thead>

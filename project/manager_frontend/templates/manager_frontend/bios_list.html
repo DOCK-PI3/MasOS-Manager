@@ -51,7 +51,7 @@
                     {% endif %}
                     
                     <div class="small-3 columns">
-                        <span class="prefix">{% trans "Upload a bios" %}</span>
+                        <span class="prefix">{% trans "Subir una bios" %}</span>
                     </div>
                     <div class="small-7 columns">
                         {{ upload_form.bios }}
@@ -79,7 +79,7 @@
     
     <div class="row">
         <div class="small-12 medium-9 columns">
-            <p class="tiny-button-v-align">{% blocktrans %}This is the full list of supported Bios, existing bios you have uploaded will be decorated and followed with a checkbox{% endblocktrans %}</p>
+            <p class="tiny-button-v-align">{% blocktrans %}Esta es la lista completa de Bios compatibles, Bios existentes que has subido están resaltadas y con una casilla de verificación{% endblocktrans %}</p>
         </div>
         <div class="small-12 medium-3 columns text-right">
             <input type="submit" name="delete_submit" value="{% trans "Delete selected files" %}" class="button tiny radius info">
@@ -91,8 +91,8 @@
             <thead>
                 <tr>
                     <th class="text-right"><small>#</small></th>
-                    <th>{% trans "System" %}</th>
-                    <th>{% trans "Filename" %}</th>
+                    <th>{% trans "Sistema" %}</th>
+                    <th>{% trans "Nombre del archivo" %}</th>
                     <th>{% trans "MD5 checksum" %}</th>
                     <th class="text-center">{% trans "Check" %}</th>
                 </tr>

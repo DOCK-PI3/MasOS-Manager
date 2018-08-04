@@ -24,7 +24,7 @@
 
 {% block manager_content %}
 <ul class="inline-list">
-    <li><span class="label info radius">{% trans "Path" %}: {{ system_path }}</span></li>
+    <li><span class="label info radius">{% trans "Ruta" %}: {{ system_path }}</span></li>
     <li><span class="label info radius">{% trans "Total" %}: {{ total_roms }}</span></li>
 </ul>
 
@@ -32,7 +32,7 @@
 {% if bios_checking %}
 <div data-alert class="alert-box warning radius">
     {% url 'manager:bios' as bios_url %}
-    <p><strong>{% blocktrans with bios_url=bios_url %}This system requires one or more <a href="{{ bios_url }}">bios</a> file that are missing from your installation:{% endblocktrans %}</strong></p>
+    <p><strong>{% blocktrans with bios_url=bios_url %}Este sistema requiere uno o más archivos de <a href=\"%(bios_url)s\"> bios </a> que faltan en su instalación:{% endblocktrans %}</strong></p>
     <p><strong>{{ bios_checking|join:', ' }}</strong></p>
 </div>
 {% endif %}
@@ -61,7 +61,7 @@
                     {% endif %}
                     
                     <div class="small-3 columns">
-                        <span class="prefix">{% trans "Upload a rom" %}</span>
+                        <span class="prefix">{% trans "Subir una Rom" %}</span>
                     </div>
                     <div class="small-7 columns">
                         {{ upload_form.rom }}
@@ -93,8 +93,8 @@
             <thead>
                 <tr>
                     <th class="text-right"><small>#</small></th>
-                    <th>{% trans "Filename" %}</th>
-                    <th>{% trans "Size" %}</th>
+                    <th>{% trans "Nombre del archivo" %}</th>
+                    <th>{% trans "Tamaño" %}</th>
                     <th class="text-center">{% trans "Check" %}</th>
                 </tr>
             </thead>

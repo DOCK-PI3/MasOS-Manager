@@ -3,7 +3,7 @@
 
 {% block manager_content %}
 <ul class="inline-list">
-    <li><span class="label info radius">{% trans "Path" %}: {{ systems_path }}</span></li>
+    <li><span class="label info radius">{% trans "Ruta" %}: {{ systems_path }}</span></li>
     <li><span class="label info radius">{% trans "Total" %}: {{ systems_list|length }}</span></li>
 </ul>
 
@@ -28,7 +28,7 @@
                 {% endif %}
                 
                 <div class="small-3 columns">
-                    <span class="prefix">{% trans "Available systems" %}</span>
+                    <span class="prefix">{% trans "Sistemas disponibles" %}</span>
                 </div>
                 <div class="small-7 columns">
                     {{ form.name }}

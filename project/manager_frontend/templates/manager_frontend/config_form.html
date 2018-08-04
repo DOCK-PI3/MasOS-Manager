@@ -3,14 +3,14 @@
 
 {% block manager_content %}
 {% if backup_content %}<ul class="tabs" data-tab>
-  <li class="tab-title active"><a href="#panel-current">{% trans "Current" %}</a></li>
-  <li class="tab-title"><a href="#panel-backup">{% trans "Backup" %}</a></li>
+  <li class="tab-title active"><a href="#panel-current">{% trans "Actual" %}</a></li>
+  <li class="tab-title"><a href="#panel-backup">{% trans "Copia de Seguridad" %}</a></li>
 </ul>{% endif %}
 
 <div class="tabs-content">
     <div class="content active" id="panel-current">
         <ul class="inline-list">
-            <li><span class="label info radius">{% trans "Path" %}: {{ config_filepath }}</span></li>
+            <li><span class="label info radius">{% trans "Ruta" %}: {{ config_filepath }}</span></li>
         </ul>
             
         <form action="." method="post">
@@ -35,7 +35,7 @@
                     {{ form.content }}
                     
                     <p class="panel">
-                        <label>{{ form.backup }} {% trans "Backup previous version before saving" %}</label>
+                        <label>{{ form.backup }} {% trans "Crear copia de seguridad previa antes de guardar" %}</label>
                     </p>
                     <p class="text-center">
                         <input type="submit" value="{% trans "Save" %}" class="button">
@@ -47,7 +47,7 @@
     
     <div class="content" id="panel-backup">
         <ul class="inline-list">
-            <li><span class="label info radius">{% trans "Path" %}: {{ backup_filepath }}</span></li>
+            <li><span class="label info radius">{% trans "Ruta" %}: {{ backup_filepath }}</span></li>
         </ul>
         <textarea name="backup" rows="30">{{ backup_content }}</textarea>
     </div>
