@@ -12,46 +12,47 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: en\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: manager_frontend/crumbs.py:9
 msgid "Home"
 msgstr "Inicio"
 
-#: manager_frontend/crumbs.py:10 templates/skeleton.html:51
+#: manager_frontend/crumbs.py:10 templates/skeleton.html:58
 msgid "Bios"
-msgstr "Bios"
+msgstr ""
 
-#: manager_frontend/crumbs.py:11 templates/skeleton.html:50
-msgid "Configuration"
+#: manager_frontend/crumbs.py:11 templates/skeleton.html:51
+msgid "Config"
 msgstr "Configuración"
 
-#: manager_frontend/crumbs.py:12 templates/skeleton.html:53
+#: manager_frontend/crumbs.py:14 templates/skeleton.html:60
 msgid "Logs"
-msgstr "Logs"
+msgstr ""
 
-#: manager_frontend/crumbs.py:13 templates/skeleton.html:49
+#: manager_frontend/crumbs.py:15 templates/skeleton.html:49
 msgid "Monitoring"
 msgstr "Monitorización"
 
-#: manager_frontend/crumbs.py:14
+#: manager_frontend/crumbs.py:16
 msgid "Rom by system"
-msgstr "Rom por sistema"
+msgstr "Roms por sistema"
 
-#: manager_frontend/crumbs.py:15
+#: manager_frontend/crumbs.py:17
 msgid "{{ system_name }}"
 msgstr ""
 
 #: manager_frontend/forms/__init__.py:23
 msgid "Submit"
-msgstr "Subir"
+msgstr "Enviar"
 
 #: manager_frontend/forms/bios.py:76
 msgid "Bios file"
-msgstr "Fichero Bios"
+msgstr "Ficheros de Bios"
 
 #: manager_frontend/forms/bios.py:98
 msgid "Your file does not seem to be a supported Bios"
@@ -59,7 +60,7 @@ msgstr "Tu fichero no parece ser una Bios soportada"
 
 #: manager_frontend/forms/bios.py:102
 msgid "Your file does not have a correct MD5 checksum"
-msgstr "Tu fichero no tiene un MD5 checksum correcto"
+msgstr "Tu fichero no tiene un correcto código de verificación MD5"
 
 #: manager_frontend/forms/config.py:22
 msgid "Content"
@@ -68,19 +69,19 @@ msgstr "Contenido"
 #: manager_frontend/forms/config.py:23
 #: manager_frontend/templates/manager_frontend/config_form.html:38
 msgid "Backup previous version before saving"
-msgstr "Crear una copia de seguridad de la versión antes de guardar"
+msgstr "Crear copia de seguridad previo antes de guardar"
 
 #: manager_frontend/forms/roms.py:60
 msgid "Rom file"
-msgstr "Archivo Rom"
+msgstr "Ficheros de Rom"
 
 #: manager_frontend/forms/roms.py:80
 msgid "Your file does not seem to be a valid Rom for this system"
-msgstr "Tu fichero no parece una Rom válida para este sistema"
+msgstr "Tu archivo no parece ser una Rom válida para este sistema"
 
 #: manager_frontend/forms/systems.py:32
 msgid "Add a new system"
-msgstr "Añadir un sistema nuevo"
+msgstr "Añadir un nuevo sistema"
 
 #: manager_frontend/templates/manager_frontend/bios_list.html:27
 #: manager_frontend/templates/manager_frontend/config_form.html:13
@@ -96,26 +97,26 @@ msgstr "Ruta"
 #: manager_frontend/templates/manager_frontend/rom_list.html:28
 #: manager_frontend/templates/manager_frontend/systems_list.html:7
 msgid "Total"
-msgstr "Total"
+msgstr ""
 
 #: manager_frontend/templates/manager_frontend/bios_list.html:54
 msgid "Upload a bios"
-msgstr "Subir una bios"
+msgstr "Subir una Bios"
 
 #: manager_frontend/templates/manager_frontend/bios_list.html:82
 msgid ""
 "This is the full list of supported Bios, existing bios you have uploaded "
 "will be decorated and followed with a checkbox"
 msgstr ""
-"Este es un listado de las Bios compatibles. Las Bios que existen que has subido, "
-"se marcarán en color y con una casilla de verificación"
+"Esta es la lista completa de Bios compatibles, Bios existentes que has subido "
+"están resaltadas y con una casilla de verificación"
 
 #: manager_frontend/templates/manager_frontend/bios_list.html:85
 #: manager_frontend/templates/manager_frontend/bios_list.html:114
 #: manager_frontend/templates/manager_frontend/rom_list.html:91
 #: manager_frontend/templates/manager_frontend/rom_list.html:112
 msgid "Delete selected files"
-msgstr "Borrar ficheros seleccionados"
+msgstr "Borrar archivos seleccionados"
 
 #: manager_frontend/templates/manager_frontend/bios_list.html:94
 msgid "System"
@@ -124,20 +125,20 @@ msgstr "Sistema"
 #: manager_frontend/templates/manager_frontend/bios_list.html:95
 #: manager_frontend/templates/manager_frontend/rom_list.html:96
 msgid "Filename"
-msgstr "Nombre de archivo"
+msgstr "Nombre del archivo"
 
 #: manager_frontend/templates/manager_frontend/bios_list.html:96
 msgid "MD5 checksum"
-msgstr ""
+msgstr "Código de verificación MD5"
 
 #: manager_frontend/templates/manager_frontend/bios_list.html:97
 #: manager_frontend/templates/manager_frontend/rom_list.html:98
 msgid "Check"
-msgstr "Comprobar"
+msgstr "Comprobación"
 
 #: manager_frontend/templates/manager_frontend/config_form.html:6
 msgid "Current"
-msgstr ""
+msgstr "Actual"
 
 #: manager_frontend/templates/manager_frontend/config_form.html:7
 msgid "Backup"
@@ -152,28 +153,28 @@ msgid "<strong>Monitor</strong> your system resources"
 msgstr "<strong>Controla</strong> los recursos de tu sistema"
 
 #: manager_frontend/templates/manager_frontend/home.html:20
-msgid "Read and edit the Recalbox <strong>Configuration</strong> file"
-msgstr "Lee y edita la <strong>Configuración</strong> de MasOS"
+msgid "Read and edit the ES <strong>Configuration</strong> file"
+msgstr "Lee y edita la <strong>Configuración</strong> de ES"
 
 #: manager_frontend/templates/manager_frontend/home.html:26
-msgid "Read the Recalbox <strong>logs</strong>"
-msgstr "Leer <strong>logs</strong> de MasOS"
+msgid "Read and edit the Retroarch <strong>Configuration</strong> file"
+msgstr "Lee y edita el archivo de Retroarch <strong> Configuración </strong>"
 
 #: manager_frontend/templates/manager_frontend/home.html:32
-msgid "Manage all supported <strong>Bios</strong> files for emulated systems"
-msgstr "Adminstra todos los archivos compatibles de <strong>Bios</strong> para los sistemas emulados"
+msgid "Read and edit the autostart.sh <strong>Script</strong> file"
+msgstr "Lee y edita el archivo <strong> Script </ strong> autostart.sh"
 
 #: manager_frontend/templates/manager_frontend/home.html:38
-msgid "Manage <strong>Rom</strong> files for emulated systems"
-msgstr "Administrar archivos <strong>Roms</strong> de los sistemas emulados"
+msgid "Manage all supported <strong>Bios</strong> files "
+msgstr "Administra todos los archivos de <strong> BIOS compatibles </strong>"
 
 #: manager_frontend/templates/manager_frontend/home.html:44
-msgid "Use the <strong>Virtual gamepad</strong>"
-msgstr "Una el <strong>gamepad virtual</strong>"
+msgid "Manage <strong>Rom</strong> files for emulated systems"
+msgstr "Administra los archivos <strong> Rom </strong> para los sistemas emulados"
 
 #: manager_frontend/templates/manager_frontend/monitoring.html:10
 msgid "CPU"
-msgstr ""
+msgstr "Procesador"
 
 #: manager_frontend/templates/manager_frontend/monitoring.html:16
 #, python-format
@@ -212,7 +213,7 @@ msgstr "Dispositivo"
 
 #: manager_frontend/templates/manager_frontend/monitoring.html:69
 msgid "Mount"
-msgstr "Montar"
+msgstr "Partición"
 
 #: manager_frontend/templates/manager_frontend/monitoring.html:70
 msgid "Type"
@@ -224,7 +225,7 @@ msgstr "Uso"
 
 #: manager_frontend/templates/manager_frontend/monitoring.html:72
 msgid "Used"
-msgstr "Usado"
+msgstr "Utilizado"
 
 #: manager_frontend/templates/manager_frontend/monitoring.html:73
 msgid "Free"
@@ -236,11 +237,12 @@ msgid ""
 "This system requires one or more <a href=\"%(bios_url)s\">bios</a> file that "
 "are missing from your installation:"
 msgstr ""
-"Este sistema requiere una o más archivo/s<a href=\"%(bios_url)s\">bios</a> "
-"que faltan en tu instalación:"
+"Este sistema requiere uno o más archivos de <a href=\"%(bios_url)s\"> bios </a> que "
+"que faltan en su instalación:"
+
 #: manager_frontend/templates/manager_frontend/rom_list.html:64
 msgid "Upload a rom"
-msgstr "Subir rom"
+msgstr "Subir una Rom"
 
 #: manager_frontend/templates/manager_frontend/rom_list.html:97
 msgid "Size"
@@ -260,11 +262,11 @@ msgstr "El archivo ha sido subido: {}"
 
 #: manager_frontend/views/bios.py:97 manager_frontend/views/roms.py:135
 msgid "Deleted file(s): {}"
-msgstr "Borrar fichero/s: {}"
+msgstr "Archivo(s) suprimido(s): {}"
 
 #: manager_frontend/views/config.py:75
 msgid "File has been backuped then edited"
-msgstr "El archivo ha sido copiado y después editado"
+msgstr "Creada copia de seguridad del archivo y después editado"
 
 #: manager_frontend/views/config.py:77
 msgid "File has been edited"
@@ -274,17 +276,21 @@ msgstr "El archivo ha sido editado"
 msgid "System \"{}\" has been created"
 msgstr "El sistema \"{}\" ha sido creado"
 
-#: settings.py:122
+#: settings.py:123
 msgid "English"
 msgstr "Inglés"
 
-#: settings.py:123
+#: settings.py:124
 msgid "French"
 msgstr "Francés"
 
-#: settings.py:124
+#: settings.py:125
 msgid "German"
 msgstr "Alemán"
+
+#: settings.py:126
+msgid "Spanish"
+msgstr "Español"
 
 #: templates/404.html:6 templates/404.html.py:14
 msgid "Error 404"
@@ -296,7 +302,7 @@ msgstr "No encontrado"
 
 #: templates/404.html:15
 msgid "The ressource you tried to reach does not exists"
-msgstr "La ruta que intentaste alcanzar no existe"
+msgstr "La ruta a la que intentaste acceder no existe"
 
 #: templates/500.html:6 templates/500.html.py:14
 msgid "Error 500"
@@ -304,13 +310,15 @@ msgstr ""
 
 #: templates/500.html:6 templates/500.html.py:14
 msgid "Internal Server Error"
-msgstr "Error Interno del Servidor"
+msgstr "Error interno del servidor"
 
 #: templates/500.html:15
 msgid ""
 "The server encountered an internal server error or misconfiguration and was "
 "unable to complete your request."
 msgstr ""
+"El servidor encontró un error interno o una configuración incorrecta y  "
+"no pudo completar tu solicitud."
 
 #: templates/skeleton.html:52
 msgid "Roms"
@@ -318,11 +326,11 @@ msgstr ""
 
 #: templates/skeleton.html:55
 msgid "Links"
-msgstr ""
+msgstr "Enlaces"
 
 #: templates/skeleton.html:57
 msgid "Forum"
-msgstr "Foro"
+msgstr ""
 
 #: templates/skeleton.html:58
 msgid "https://github.com/digitalLumberjack/recalbox-os/wiki/Home-(EN)"
@@ -330,4 +338,4 @@ msgstr ""
 
 #: templates/skeleton.html:58
 msgid "Wiki (EN)"
-msgstr "Wiki (ES)"
+msgstr "Wiki (EN)"
