@@ -35,52 +35,52 @@ msgstr "Logs"
 
 #: manager_frontend/crumbs.py:13 templates/skeleton.html:49
 msgid "Monitoring"
-msgstr ""
+msgstr "Monitorización"
 
 #: manager_frontend/crumbs.py:14
 msgid "Rom by system"
-msgstr ""
+msgstr "Rom por sistema"
 
 #: manager_frontend/crumbs.py:15
 msgid "{{ system_name }}"
-msgstr ""
+msgstr "{{ nombre_sistema }}"
 
 #: manager_frontend/forms/__init__.py:23
 msgid "Submit"
-msgstr ""
+msgstr "Subir"
 
 #: manager_frontend/forms/bios.py:76
 msgid "Bios file"
-msgstr ""
+msgstr "Fichero Bios"
 
 #: manager_frontend/forms/bios.py:98
 msgid "Your file does not seem to be a supported Bios"
-msgstr ""
+msgstr "Tu fichero no parece ser una Bios soportada"
 
 #: manager_frontend/forms/bios.py:102
 msgid "Your file does not have a correct MD5 checksum"
-msgstr ""
+msgstr "Tu fichero no tiene un MD5 checksum correcto"
 
 #: manager_frontend/forms/config.py:22
 msgid "Content"
-msgstr ""
+msgstr "Contenido"
 
 #: manager_frontend/forms/config.py:23
 #: manager_frontend/templates/manager_frontend/config_form.html:38
 msgid "Backup previous version before saving"
-msgstr ""
+msgstr "Crear una copia de seguridad de la version antes de guardar"
 
 #: manager_frontend/forms/roms.py:60
 msgid "Rom file"
-msgstr ""
+msgstr "Archivo Rom"
 
 #: manager_frontend/forms/roms.py:80
 msgid "Your file does not seem to be a valid Rom for this system"
-msgstr ""
+msgstr "Tu fichero no parece una Rom valida para este sistema"
 
 #: manager_frontend/forms/systems.py:32
 msgid "Add a new system"
-msgstr ""
+msgstr "Añadir un sistema nuevo"
 
 #: manager_frontend/templates/manager_frontend/bios_list.html:27
 #: manager_frontend/templates/manager_frontend/config_form.html:13
@@ -89,40 +89,42 @@ msgstr ""
 #: manager_frontend/templates/manager_frontend/rom_list.html:27
 #: manager_frontend/templates/manager_frontend/systems_list.html:6
 msgid "Path"
-msgstr ""
+msgstr "Rura"
 
 #: manager_frontend/templates/manager_frontend/bios_list.html:28
 #: manager_frontend/templates/manager_frontend/monitoring.html:74
 #: manager_frontend/templates/manager_frontend/rom_list.html:28
 #: manager_frontend/templates/manager_frontend/systems_list.html:7
 msgid "Total"
-msgstr ""
+msgstr "Total"
 
 #: manager_frontend/templates/manager_frontend/bios_list.html:54
 msgid "Upload a bios"
-msgstr ""
+msgstr "Subir una bios"
 
 #: manager_frontend/templates/manager_frontend/bios_list.html:82
 msgid ""
 "This is the full list of supported Bios, existing bios you have uploaded "
 "will be decorated and followed with a checkbox"
 msgstr ""
+"Este es un listado de las Bios compatibles. Las Bios que existen que has subido, "
+"se marcaran en color y con una casilla de verificacion"
 
 #: manager_frontend/templates/manager_frontend/bios_list.html:85
 #: manager_frontend/templates/manager_frontend/bios_list.html:114
 #: manager_frontend/templates/manager_frontend/rom_list.html:91
 #: manager_frontend/templates/manager_frontend/rom_list.html:112
 msgid "Delete selected files"
-msgstr ""
+msgstr "Borrar ficheros seleccionados"
 
 #: manager_frontend/templates/manager_frontend/bios_list.html:94
 msgid "System"
-msgstr ""
+msgstr "Sistema"
 
 #: manager_frontend/templates/manager_frontend/bios_list.html:95
 #: manager_frontend/templates/manager_frontend/rom_list.html:96
 msgid "Filename"
-msgstr ""
+msgstr "Nombre de archivo"
 
 #: manager_frontend/templates/manager_frontend/bios_list.html:96
 msgid "MD5 checksum"
@@ -131,7 +133,7 @@ msgstr ""
 #: manager_frontend/templates/manager_frontend/bios_list.html:97
 #: manager_frontend/templates/manager_frontend/rom_list.html:98
 msgid "Check"
-msgstr ""
+msgstr "Comprobar"
 
 #: manager_frontend/templates/manager_frontend/config_form.html:6
 msgid "Current"
@@ -139,19 +141,19 @@ msgstr ""
 
 #: manager_frontend/templates/manager_frontend/config_form.html:7
 msgid "Backup"
-msgstr ""
+msgstr "Copia de seguridad"
 
 #: manager_frontend/templates/manager_frontend/config_form.html:41
 msgid "Save"
-msgstr ""
+msgstr "Guardar"
 
 #: manager_frontend/templates/manager_frontend/home.html:14
 msgid "<strong>Monitor</strong> your system resources"
-msgstr ""
+msgstr "<strong>Controla</strong> los recursos de su sistema"
 
 #: manager_frontend/templates/manager_frontend/home.html:20
 msgid "Read and edit the Recalbox <strong>Configuration</strong> file"
-msgstr ""
+msgstr "Lee y edita la <strong>Configuracion</strong> de MasOS"
 
 #: manager_frontend/templates/manager_frontend/home.html:26
 msgid "Read the Recalbox <strong>logs</strong>"
