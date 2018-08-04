@@ -89,7 +89,7 @@ msgstr "Añadir un sistema nuevo"
 #: manager_frontend/templates/manager_frontend/rom_list.html:27
 #: manager_frontend/templates/manager_frontend/systems_list.html:6
 msgid "Path"
-msgstr "Rura"
+msgstr "Ruta"
 
 #: manager_frontend/templates/manager_frontend/bios_list.html:28
 #: manager_frontend/templates/manager_frontend/monitoring.html:74
